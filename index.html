@@ -99,25 +99,103 @@
 
 <h2><span class="number">2.</span>料金</h2>
 
-<dl class="price">
-<dt>◆全身脱毛（VIOなし）</dt>
-<dt>　　●メンズ</dt>
-<dd>　　6,600円</dd>
-<dt>　　●レディース</dt>
-<dd>　　5,500円</dd>
-<dt>　　●キッズ※中学生まで<br>
-補足情報があればここに書きます。サンプルテキスト。</dt>
-<dd>000,000円</dd>
-<dt>◆コース名<br>
-補足情報があればここに書きます。サンプルテキスト。</dt>
-<dd>000,000円</dd>
-<dt>◆コース名<br>
-補足情報があればここに書きます。サンプルテキスト。</dt>
-<dd>000,000円</dd>
-<dt>◆コース名<br>
-補足情報があればここに書きます。サンプルテキスト。</dt>
-<dd>000,000円</dd>
-</dl>
+<section class="menu-section">
+  <h2>全身脱毛（VIOなし）</h2>
+  <div class="price-list">
+    <dl>
+      <dt>メンズ</dt>
+      <dd><span class="price">¥6,600</span></dd>
+
+      <dt>レディース</dt>
+      <dd><span class="price">¥5,500</span></dd>
+
+      <dt>キッズ <span class="note">※中学生まで</span></dt>
+      <dd><span class="price">¥4,400</span></dd>
+    </dl>
+  </div>
+</section>
+
+<style>
+  /* セクション全体 */
+  .menu-section {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fffafc;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  }
+
+  /* 見出し */
+  .menu-section h2 {
+    text-align: center;
+    color: #d36b9b;
+    border-bottom: 2px solid #f3c4d1;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+  }
+
+  /* 料金表 */
+  .price-list dl {
+    margin: 0;
+  }
+
+  .price-list dt {
+    font-weight: 600;
+    color: #333;
+    float: left;
+    clear: left;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .price-list dd {
+    text-align: right;
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .note {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  /* clearfix */
+  .price-list::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  /* スマホ対応 */
+  @media (max-width: 480px) {
+    .menu-section {
+      padding: 20px;
+    }
+    .menu-section h2 {
+      font-size: 1.4rem;
+    }
+    .price-list dt, .price-list dd {
+      width: 100%;
+      text-align: center;
+    }
+    .price-list dd {
+      padding-bottom: 10px;
+    }
+  }
+</style>
+
 
 </section>
 
